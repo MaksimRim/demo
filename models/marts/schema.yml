@@ -1,0 +1,12 @@
+version: 2 
+models: 
+  - name: dim_customers 
+    description: "Аналітична вітрина з профілями клієнтів та агрегованими метриками замовлень." 
+    columns: 
+      - name: customer_id 
+        description: "Унікальний первинний ключ клієнта." 
+        tests: 
+        - unique 
+        - not_null 
+      - name: number_of_orders 
+        description: "Загальна кількість замовлень клієнта." 
